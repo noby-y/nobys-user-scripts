@@ -55,12 +55,13 @@ function entity_list_contains(new_column)
 ``` 
 Checks if an entity list already contains an extra column with the same `name` field as `new_column`'s `name`, otherwise returns `false`
 
-> **Parameters:** 
->> `new_column` - pass your new column
+### Parameters:  
+`new_column` - pass your new column
 
-> **Returns:** 
->> `true`   
->> `false`
+### Returns:  
+`true`   
+`false`
+
 
 ______
 ```lua
@@ -68,10 +69,10 @@ function table_contains(table, value)
 ```
 Checks whether a `table` contains a certain `value`
 
-> **Parameters:**
->> `table` - pass the table you want to check   
->> `value` - pass the value you want to find
+### Parameters: 
+`table` - pass the table you want to check   
+`value` - pass the value you want to find
 
-> **Returns:** 
->> `true`   
->> `false`
+### Returns:  
+`true`   
+`false`
