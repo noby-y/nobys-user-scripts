@@ -18,20 +18,20 @@ A script used to add coordinates column to the entity list window
 
 Spawns a stationary turret at player location. The turret can be modified through Entity Picker:
 
-> VariableStorageComponent #1 
->> `name` == `projectile_file`  
->> `value_string` => enter path to any projectile you want the turret to shoot
-
-> VariableStorageComponent #2 
->> `name` == `vel_x`   
->> `value_int` => enter whatever initial horinzontal velocity you want the projectile to have (0 default)
-
-> VariableStorageComponent #3 
->> `name` == `vel_y`   
->> `value_int` => enter whatever initial vertical velocity you want the projectile to have (600 default)
-
-> LuaComponent
->> `execute_every_n_frame` => enter turret's shooting frequency
+#### VariableStorageComponent #1 
+`name` == `projectile_file`  
+`value_string` => enter path to any projectile you want the turret to shoot
+______
+#### VariableStorageComponent #2 
+`name` == `vel_x`   
+`value_int` => enter whatever initial horinzontal velocity you want the projectile to have (0 default)
+______
+#### VariableStorageComponent #3 
+`name` == `vel_y`   
+`value_int` => enter whatever initial vertical velocity you want the projectile to have (600 default)
+______
+#### LuaComponent
+`execute_every_n_frame` => enter turret's shooting frequency
 
 
 
