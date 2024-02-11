@@ -19,6 +19,6 @@ function table_contains(table, value)
     return false
 end
 
-function print_test()
-    print("testing utils")
+function utils_print_test()
+    print("Utility scripts are imported correctly")
 end
