@@ -10,7 +10,7 @@
 
 ## List of user scripts
 
-### `entity_list_coord.lua`
+### `entity_list_add_coords.lua`
 A script used to add coordinates column to the entity list window
 
 ### `spawn_debug_turret.lua`
