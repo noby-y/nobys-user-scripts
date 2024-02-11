@@ -4,7 +4,7 @@
 
 1. Download code in ZIP
 2. Unpack contents of ZIP folder
-3. Copy the contents of `Nobys-user-scripts-main` folder into the `user-scripts` folder
+3. Copy the contents of `nobys-user-scripts-main` folder into the `user-scripts` folder
    - `user-scripts` folder can be opened through Lua Console in Component Explorer 
 
 
