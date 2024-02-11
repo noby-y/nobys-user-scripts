@@ -1,8 +1,9 @@
 --* user_script("utils/utils.lua")
 
-function entity_list_contains(entity_list, value)
-    for i = 1,#entity_list do
-        if (entity_list[i].name == value.name) then
+function entity_list_contains(new_column)
+    local entity_list = dofile_once("mods/component-explorer/entity_list.lua")
+    for i = 1,#entity_list.extra_columns do
+        if (entity_list.extra_columns[i].name == new_column.name) then
             return true
         end
     end
