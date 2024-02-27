@@ -5,7 +5,6 @@ if #players > 0 then
     local x,y = EntityGetTransform( players[1] )
     local entities = EntityGetInRadius(x, y, 160)
     for i,ent in ipairs(entities) do
-        -- print("Entity: " .. ent)
         visualize_entity(ent) 
     end 
 end
