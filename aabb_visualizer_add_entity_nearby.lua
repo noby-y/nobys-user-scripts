@@ -13,16 +13,8 @@ end
 local entities = EntityGetInRadius(x, y, 160)
 
 for i,ent in ipairs(entities) do
-    local comps = EntityGetAllComponents(ent)
-    if ( comps ~= nil ) then
-        local vis_exists = false
-        for i,comp in ipairs( comps ) do
-            if ( string.find(ComponentGetTypeName(comp), "aabb_visualizer") and ComponentGetIsEnabled(comp)) then
-                vis_exists = true
-            end
-        end
-        if not vis_exists then
-            visualize_entity(ent) 
-        end
+    local comps = EntityGetAllChildren(ent, "aabb_visualizer")
+    if ( comps == nil or next(comps) == nil ) then
+        visualize_entity(ent)
     end
 end 
