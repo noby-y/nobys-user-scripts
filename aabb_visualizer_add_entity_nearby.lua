@@ -9,9 +9,9 @@ else
 else
     return "ERROR: No camera/players found"
 end
-print("x = " .. x .. " y = " .. y)
+
 local entities = EntityGetInRadius(x, y, 160)
-print("entities = " .. entities)
+
 for i,ent in ipairs(entities) do
     local comps = EntityGetAllComponents(entity_id)
     if ( comps ~= nil ) then
