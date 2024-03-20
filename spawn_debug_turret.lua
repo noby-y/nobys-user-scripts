@@ -8,5 +8,3 @@ else
     return "ERROR: No camera/players found"
 end
 EntityLoad("mods/nobys_things/mod_data/entities/buildings/debug_turret.xml", x, y)
-
-
