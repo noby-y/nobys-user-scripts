@@ -1,7 +1,7 @@
 local players = EntityGetWithTag( "player_unit" )
 local x,y
 if #players > 0 then
-    local x,y = EntityGetTransform( players[1] )
+    x,y = EntityGetTransform( players[1] )
 elseif #players <= 0 then
     x,y = GameGetCameraPos()
 else
