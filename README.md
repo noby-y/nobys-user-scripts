@@ -10,10 +10,10 @@
 
 ## List of user scripts
 
-### `entity_list_add_coords.lua`
+### 1: `entity_list_add_coords.lua`
 A script used to add coordinates column to the entity list window
 
-### `spawn_debug_turret.lua`
+### 2: `spawn_debug_turret.lua`
 [Noby's Things](https://github.com/noby-y/nobys_things) mod is required for this to work
 
 Spawns a stationary turret at player location. The turret can be modified through Entity Picker:
@@ -33,7 +33,7 @@ ______
 #### LuaComponent
 `execute_every_n_frame` => enter turret's shooting frequency
 
-### `visualizer_add_e.lua`
+### 3: `visualizer_add_e.lua`
 Add a visualizer for different components to the entity whose id is stored in `e` variable.  
 To use first assign select entity id to the `e` variable in the lua console. For exmaple:
 ```lua
@@ -42,7 +42,7 @@ e = 666
 will select entity with id `666` as the target for visualizer.  
 After entering this in the console run click on the script to run it.
 
-### `visualizer_add_nearby.lua`
+### 4: `visualizer_add_nearby.lua`
 Add a visualizer for different components to all entities within 160 radius (same as Spells to Power) around the player or camera (if there is no player)
 
 #### Note: 
