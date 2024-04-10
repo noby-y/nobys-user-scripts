@@ -33,7 +33,22 @@ ______
 #### LuaComponent
 `execute_every_n_frame` => enter turret's shooting frequency
 
+### `visualizer_add_e.lua`
+Add a visualizer for different components to the entity whose id is stored in `e` variable.  
+To use first assign select entity id to the `e` variable in the lua console. For exmaple:
+```lua
+e = 666
+```
+will select entity with id `666` as the target for visualizer.  
+After entering this in the console run click on the script to run it.
 
+### `visualizer_add_nearby.lua`
+Add a visualizer for different components to all entities within 160 radius (same as Spells to Power) around the player or camera (if there is no player)
+
+#### Note: 
+- you can disable visualizers for different components by looking through child entities (they're named after components they visualize)
+- the visualizer won't add any new visualizers if there's even 1 existing visualizer on the entity
+- `AreaDamageComponent` dimensions are extremely wack and inaccurate code-wise. Don't trust it
 
 # **Utility script**
 This script adds some utility functions that can help you write your own 
@@ -53,7 +68,7 @@ ______
 ```lua
 function entity_list_contains(new_column)
 ``` 
-Checks if an entity list already contains an extra column with the same `name` field as `new_column`'s `name`, otherwise returns `false`
+Checks if an entity list already contains an extra column with the same `name` field as `new_column`'s `name`
 
 ### Parameters:  
 `new_column` - pass your new column
@@ -67,7 +82,7 @@ ______
 ```lua
 function table_contains(table, value)
 ```
-Checks whether a `table` contains a certain `value`
+Checks whether a `table` contains select `value`
 
 ### Parameters: 
 `table` - pass the table you want to check   
